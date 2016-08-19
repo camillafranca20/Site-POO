@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* --------------- Formatação do Corpo ---------------  */
+
+body{
+    background-color: #38AF7C;
+    margin:0px 0px 0px 0px
+}
+
+section#principal{
+    background-color: rgba(255,255,255,0.5);
+    margin: 0px auto 0px auto;
+    width: 1000px;
+    position: relative;
+    display: block;
+    filter: alpha(opacity=10);
+    padding-bottom: 30px ;
+}
+/* --------------- Formatação do Header ---------------  */
+
+header{
+    background-color: azure;
+    height:150px
+}
+
+img#logo{
+    position: relative;
+    top:13px;
+    left:7%;
+}
+
+/* --------------- Formatação do Menu ---------------  */
+
+nav#menu {  display: block;  }
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 93px;
+    right: 20%;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 250ms;
+    font-family: Arial, sans-serif;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu li:hover{  background-color: #29C381 ;  }
+
+nav#menu a:hover {  text-decoration: activeborder;  }
+
+/* --------------- Formatação slider/home --------------- */
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+}
+
+/* --------------- Formatação Noticias --------------- */
+
+.paragrafo{
+    text-align: justify;
+    margin: 0px 50px 0px 50px;
+}
+
+.h1n1{
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+    color: #006400;
+}
+
+.renanViadao{
+    margin:0px auto 0px auto;
+    width:700px ;
+    /*background-color:#CFF; */
+    font: menu;
+    font-size: 20px
+}
+
+/* --------------- Formatação Footer --------------- */
+
+footer{
+     background-color:#AFDFCA;
+     height:150px;
+     margin:0px 0px 0px 0px
+ }
+
+/* --------------- Formatação Contatos ---------------- */
+
+.space{
+    width: 300px;
+    margin-top:10px;
+}
+
+.space2{ height: 100px; }
+
+td {
+    padding: 0px;
+    vertical-align: bottom;
+}
